@@ -1,0 +1,122 @@
+
+Test PHP 
+Raspundeti la intrebari.
+
+1.Cum fac un fisier PHP?
+
+Un fisier PHP se face folosind extensia .php(de exemplu index.php sau script.php). Acest fisier incepe cu <?php si se termina cu ?>
+
+2.Ce este o variabila?
+
+O varibila reprezinta un container temporar de depozitare a anumitor valori. Aceasta incepe intotdeauna cu semnul $ ($variabila).
+
+
+3.Cum adaug comentarii si care sunt modurile prin care pot adauga?
+
+Pentru a adauga un comentariu putem folosi:
+- comentariu pe o linie: // sau #
+- comentarii pe mai multe linii /* ......  */
+
+4.Ce reprezinta simbolul ( . ) ? si la ce ne ajuta? 
+
+Simbolul (.) este un operator de concatenare a stringurilor. Este folosit pentru a concatena, adica a uni 2 stringuri. 
+
+
+5.Dupa terminarea unei linii de cod ce se pune ?
+
+Dupa terminarea unei linii de cod se pune semnul ; (semicolon) pentru a marca sfarsitul instructiunii date.
+
+6.Ce este ghilimeaua dubla si la ce ne ajuta? dar simpla? care este diferenta?
+
+Ambele (ghilimeaua simpla si cea dubla) delimiteaza stringurile. Diferenta dintre ele este ca ce se afla in ghilimele duble va fi analizat ca si varibila,
+ce se afla in ghilimele simple nu va fi analizat si va fi afisat literal ca nume de variabila.
+
+7.Ce afiseaza urmatorul exercitiu :  
+
+$a = 20;
+$b = 10;
+echo print($a)+10;
+echo "</br>";
+echo print($b) + print($a) + 10;
+
+Afiseaza:
+301
+30111
+
+8.Ce afiseaza echo ?
+
+echo afiseaza text, variabile, siruri de caractere etc., mai putin array-uri. La arrayuri folosim print_r() sau var_dump().
+
+9.Ce afiseaza print ?  de da rezultatul respectiv? 
+Print afiseaza un text, variabile sau siruri de caractere si returneaza intotdeauna valoarea 1.
+
+10.Ce este un array indexat, multidimensional dar asociativ?
+Un array indexat are un index numaric, cel asociativ are un index pe care il definim noi si cel multidimensional reprezinta arrayuri in arrayuri.
+
+11. Am array de mai jos, cum adaug o noua vloare?
+
+	$lista = array(	"paine" , "lapte" , "oua"	);
+
+	Vreau o noua valoare dupa oua, si anume ciocolata, doresc raspunsul doar, utilizand variabila de la array 
+
+$lista = ["paine" , "lapte" , "oua"];
+$lista [] = "ciocolata";
+print_r ($lista);
+
+
+12. Exercitiu : 
+
+	$a = 10;
+	$b = 30;
+	
+	echo pow($a,2) + pow($b,2); // ce o sa afiseze si de ce raspunsul x?
+pow ($a,2) inseamamna 10 la puterea a 2-a, adica 100. 
+pow ($b,2) inseamna 30 la puterea a 2-a, adica 900.
+Rezultatul este 100+900=1000
+
+	
+	echo ((10+2) / 2 + (3 * 10 ) / 0) * 0 ) // ce o sa afiseze? si cu ce incepem prima oara cand avem o astfel de ecuatie?
+
+rezultatul este (12/2 + 30/0)*0=0.
+Incepem cu parantezele si puterile, apoi operatiile de inmultire, impartire si la final adunarile si scaderile.
+	
+13. Ce este un float? 
+Float reprezinta numerele cu virgula mobila, adica cu zecimale.
+
+14, Ce este un int?
+int reprezinta integer, adica un numar intreg, fara zecimale.
+
+15. Ce functie folosim pentru rontunjirea numarului 2.6 la 3?
+folosim functia ceil(2.6).
+
+16. Ce functie folosim pentru verificarea numarului de caractere dintr-un sir?
+folosim functia strlen($text)
+
+17. Ce face isset?
+functia isset examineaza existenta unei variabile.
+
+18. Ce face empty?
+functia empty verifica daca o variabila este empty, adica goala. returneaza true sau false.
+
+19. Ce inseamna semnul < ? dar > ?
+Ambele semne masoara inegalitatea, semnul < inseamna mai mic si > inseamna mai mare.
+
+20. Ce inseamna != ? dar !== ,? dar === , == ? dar si <=>  ? :)
+
+!= inseamna inegalitatea, returneaza true sau false.
+!== inseamna ca doua valori nu sunt identice. Returneaza true daca cele 2 valori nu sunt identice.
+=== inseamna ca valorile si tipurile de date sunt identice. Returneaza true daca cele 2 valori sunt identice si contin acelasi tip de date.
+== inseamna egalitate.
+<=> este operatorul spaceship si daca a<b returneaza -1, daca 1=b returneaza 0, daca a>b returneaza 1.
+
+
+
+
+
+
+	
+
+
+
+
+
